@@ -30,10 +30,10 @@ public class ReadData {
             String city = (String) address.get("city");
             String state = (String) address.get("state");
 
-            System.out.println("Address   " +i+"..!");
-            System.out.println("Street   "+street);
-            System.out.println("City   "+city);
-            System.out.println("State   "+state);
+            System.out.println("ADDRESS  " +i+"..!");
+            System.out.println("STREET   "+street);
+            System.out.println("CITY  "+city);
+            System.out.println("STATE   "+state);
         }
 
 

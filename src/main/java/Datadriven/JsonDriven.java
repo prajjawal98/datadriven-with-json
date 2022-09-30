@@ -58,9 +58,9 @@ public class JsonDriven {
         JSONParser jsonParser = new JSONParser();
 
         FileReader fileReader = new FileReader("src/Jsonfiles/testdata.json");
-        Object obj = jsonParser.parse(fileReader);
+        Object object = jsonParser.parse(fileReader);
 
-        JSONObject jsonObject = (JSONObject) obj;
+        JSONObject jsonObject = (JSONObject) object;
         JSONArray array = (JSONArray) jsonObject.get("userlogins");
 
         String arr[] = new String[array.size()];

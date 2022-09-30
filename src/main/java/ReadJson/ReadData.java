@@ -13,17 +13,18 @@ public class ReadData {
 
     public static void main(String[] args) throws IOException, ParseException {
         JSONParser jsonParser= new JSONParser();
+        String file = "src/Jsonfiles/employee.json";
 
-        FileReader fileReader = new FileReader("src/Jsonfiles/employee.json");
-        Object obj = jsonParser.parse(fileReader);
-        JSONObject jsonObject = (JSONObject)obj;
+        FileReader fileReader = new FileReader(file);
+        Object object = jsonParser.parse(fileReader);
+        JSONObject jsonObject = (JSONObject)object;
 
 
         String firstname = (String) jsonObject.get("firstName");
         System.out.println("FIRSTNAME"+" "+firstname);
 
-        JSONArray array = (JSONArray)((JSONObject) obj).get("address");
-        for (int i =0;i<array.size();i++){
+        JSONArray array = (JSONArray)((JSONObject) object).get("address");
+        for (int i = 0;i<array.size();i++){
             JSONObject address = (JSONObject) array.get(i);
 
             String street = (String) address.get("street");

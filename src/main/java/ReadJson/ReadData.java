@@ -31,8 +31,8 @@ public class ReadData {
             String city = (String) address.get("city");
             String state = (String) address.get("state");
 
-            System.out.println("ADDRESS  " +i+"..!");
-            System.out.println("STREET   "+street);
+            System.out.println("ADDRESS  " +i+" !");
+            System.out.println("COLONY_NAME   "+street);
             System.out.println("CITY  "+city);
             System.out.println("STATE   "+state);
         }
